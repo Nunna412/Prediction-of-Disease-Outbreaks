@@ -12,9 +12,9 @@ st.set_page_config(page_title='Prediction of Disease Outbreaks',
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Load pre-trained models
-diabetes_model = pickle.load(open(f'{working_dir}/Saved_Models/diabetes.sav, 'rb'))
-#heart_disease_model = pickle.load(open(r"C:\Users\nunna\OneDrive\Desktop\Project_prediction of disease outbreaks\Saved_Models\heartdisease.sav", 'rb'))
-#parkinsons_model = pickle.load(open(r"C:\Users\nunna\OneDrive\Desktop\Project_prediction of disease outbreaks\Saved_Models\parkinsons.sav", 'rb'))
+diabetes_model = pickle.load(open(f'{working_dir}/Saved_Models/diabetes.sav', 'rb'))
+heart_disease_model = pickle.load(open(f'{working_dir}/Saved_Models/heartdisease.sav', 'rb'))
+parkinsons_model = pickle.load(open(f'{working_dir}/Saved_Models/parkinsons.sav', 'rb'))
 
 # Sidebar menu
 with st.sidebar:
